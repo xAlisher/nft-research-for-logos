@@ -1,0 +1,307 @@
+epic B walk started Thu Sep  3 11:40:59 AM CEST 2026
+scp ok
+===== accounts =====
+
+### $ wallet account new public --label bdef
+Persistent storage not found, need to execute setup
+Input password: Statistics not found, choosing empty
+
+IMPORTANT: Write down your recovery phrase and store it securely.
+This is the only way to recover your wallet if you lose access.
+
+Recovery phrase:
+  school enlist mean rare suggest gorilla alley reduce rigid nose become party sun scorpion people deliver hawk help topple aerobic history shadow dynamic ripple
+
+Generated new account with account_id Public/CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs at path /0
+With pk 531bd0af68c9cd73c1584b701ebaacc1e772e8cece3a3161b5422b687ab61900
+   (exit 0)
+
+### $ wallet account new public --label bmaster
+Generated new account with account_id Public/7DapW6invF42PQqjyZBammkUzqABVUZmzxn36LmvZ8CP at path /1
+With pk 1b3f12648e0547cdb687cd47c180d289e4cd4b52ede826549d8b39f5a6a47742
+   (exit 0)
+
+### $ wallet account new public --label bmeta
+Generated new account with account_id Public/H6HkHkpsZXMUw1R9REfTj7Uk6WNyytoHAHwPvTi1T6Ro at path /0/0
+With pk 878a84ee94dedfb8666c8ca9fd6acce5ac6ae8775515fe01c4c6b3c962a734f3
+   (exit 0)
+
+### $ wallet account new public --label bpubcopy
+Generated new account with account_id Public/8reXQh84wDVCTSs8xuCsc8TqK2bH8aChvahBypQfa6kP at path /2
+With pk 6ba5e4bfd549b743ff90c84a75dbe69c132d974555b77ba9eb4c7e7f25df3aec
+   (exit 0)
+
+### $ wallet account new private --label bpriv1
+Generated new account with account_id Private/BaSX8Py5GWxTnxExBsqj24qGTPtuyzE8hfwYwgZU81iN at path /0
+With npk 56f3a1b80a4d19a52fe4a1cb52e57f4e8344dbc38ffcc8811e4d30ae8b66ee78
+With vpk 3af3b3c260539701475e8b24b2b6131b41a5e1b67b439b0e4e2778fd0a409fa7b57b19c4aa51c1cd6b60b89896f576196788a7543aaf3123396be86a13226aa4027e86b3570201b8feb3aa92709214816e2fb38fccdb59fa22a0dcd363e3dac69a12a8c3104bea142ece45ab7cfc0f1914874c330ca2ccbc28c0cd00527a096b36257a0ce263c271336ff1021892ec8360d49e5363717164aac689c48a860baa308fa6857880ba205501c5cab59de0204db8b685f6957410214cbc222ff5d65abcc70252662af998c988a966a24596f5789c05c423c3642b3054b44d00b6069a1a76b6a9af935928b31b277c6cd4932e2290b8815154525760c79c7241bc78327b0e6e15cb7c3560916a7211b5125dac8f577549183b33b71557ecc10050c034e40989248b96a9695e70751a7d2b12481b0c7d669a02f2838ca93a862b441a602f269c16d4bc4aa292bebc008dce1b18e1076e2ce84bd7d415010499b276b8e8e29643814876fbc70bb25227c43d677bbc4a59adee5178e96b533f27225136152086983fb7214434a6a97b53819558583a59ef58607e0806cc485e82a8c982d1180b3b40ae3a405a886808b58f06b53f51952ffd4c76a0310f1f806b95f55cb487cb02ccc35a142043668aa38674c264988d773ed8a0b7fd01ae4063a45f7b05aa32137c68a5aad0c40993103a6bac017134f25237937825f19454a8c675d0613e72b023c3f5ae09bb7cee74afd4777ee2104ed8b8984ed579fc51ad3f0a154099a5e8d589547b8a202803c1e98c3f213415f0a92a06c31f314e8790ae69d966d7302a8bd583fe3731d17a3547b9271249959d50075226049cf98275e08ad2d2b426dbb27fa56601d8affbf1831a2c39fb91371995abf1d57371b2c57f88c5065043db21146b1c9a7756ca1dc39d2725455dbbbb5206742c03b1787b64af5c651a58791f34b599e32838f24ebc511fbc25c4c7f78ba683967e9527e991cb5052bc6d0a3ad4045c007dca29b2959e56ad0234a6fb7987add80df5eac79dc5b0d7325fe797b644745b6349b3b1e55d5a53a08975c8dd0b2369e92ee0c6349612cba7daa8f1c43b8cf2c892d80a79733c73ba86e9d217bdf0ae9c464c032aae5f173f54a822c104cb2db864a383c393ab604eb984cd761da338051125619481c993f79a9ad4b4520107bd430634092b1491568df9708faa6f02177ac2762986cab7b566ce618b46b698ada0a83f0095acc4845098b626762bb9f4668526863ebb6b8fb58260283174ccb35824c790a3c0705744654081968f5884a6c098dd079a1f142a0c8b2b3c284e5d3680f766a502271fc689423df891ee472a1a0c5a740c34ef23a52354b0d0a15d490cad727b917f2a8765f2cd5239239f44449b81ceebe339bba546d5265060fbaa897b607f80663ca94ce7a69f4838979f0918a0543a6f0747251b8d12b54c2d4a8f3e400789f5bcda60515739c04d71a2cfc47dd1859221ea659d302d8cda5db53153e1e850a7dcc75f6b4ea8e2389fc4c7de8255a2e0ae17922eb4b0596dd81b508aa7f9157d4f108f2fb58c96a35428f75839b0600088990739c3422025fb6c04295a01418587e058af3fa72cfeeb56395c2ec206bea326cb26ed69c8371eafba18f9d64fe03bb6525c80d91dd27eb3915ca0af7a6c
+   (exit 0)
+
+### $ wallet account new private --label bpriv2
+Generated new account with account_id Private/HSmFxPcsXrE477PodQCZUx7pZWhuBvQtENvZHevc1bZw at path /1
+With npk 610d9073f999f4b7bfbe31a98969a1c5f2f7a4dd04c029c7e7cbe5b421645931
+With vpk b3085b40c43e1a23093ba9427b309a794b199222a8061a3fe6311ab5d09235a78bd0905f9727c0c5fb42d4f5ab1eb77df113a2b8ac13aa6b77248702a4a79bb8c652d8cb9eb09a9a234b303912112661be909084a7e748960a0a2bc6828034c50f68c0342522a145cb5b040a97965e8241699c6570abc610c1ba053844514aa42d7a4833a0c206bf217bb75c15cbc46d99a77eaf60a801f963e3a4cb5158831cfa15feaac0e477c8c8e91f36a7393b417753b056217499eb9c6c9411bb94a8a65d533abfb3c33e941dfbd68eb2014771427e27b0931928b43f909bbefa8a606445ebf8b10867b7c7d0268a02850775c1a8b21e4b231800633bfc0010c9c27b1889268361cd05e5caa015392a23ca28e424fa874d363657c9e7755776b47b98a31f86862a4b9e3292b26ba41819d13edb4c2ff907cca9619ea5b20c6be60943754136baa848950329e94392358745579532a5cd3d88c7cf101de18977d0e75037eb6f633827b2b7a6ffb805c6a0c63aba1a4af146650683b6e975946c391376786ee21887958f3e408c888c26efb52ce52253b6483104a16b7547cf09952d914763c58c089432b2a6eca03d2a8f30a3ce7828582fb2c73aa5786f13c51282bb1e3b29165cb67761cbc0456b5cf1773ba56f36c00b19f648514598567c4abd90984a33b48f802315753894e72001a572c1781d7c9171e2fa53afb6bf7de67701db347c823723052f91716d4021287508292058cbb9878a08b658ff2a9206a57b954cc6d21362f862028926bd49788668cac18ee334846b41d85496d9465e5ce2a27e6a8fcc9b4e1ac27b5f3c87bf83620c2678fc220796da0711948240b534878b8725892c29511fabe00c31b04760f5814357b21a0c246ef761bf9467ed012901b9a45e6049e51c65d0308ac6e1bec57ba7f7713fce86380b048321a6bf676207a47291747b9835ca9c40445fab06153ce879995070cdbbbdc03a187c42920f95593a6977c47b68bba530bee327ba015d7f7b7d17f9a8e4c5828f97ced1937fff3ab813860b0b5231acb046f11c1a4a9b3f68a470a96b96f3701614bc19ab1c5815bac8759163f0a0b6aa569b65eb16d5188798b96512043b745c27771a0ea3f722b4802f1bd0c25890c57594543e35258e0398cbb973a847464ae37f7b671dffa70502f34ecd85b59b1669f4653eb145b5e64a6b1dc179165c5140b803fb4585546a50c271049b583852769bde3304341839317307b898203e12498afb26c3b9aeb8d948d6fa85229aa89162cde37cc3d191359fbc6265a23145c2a9e0ab447e57396f24c02f4c1e692a96eec271e42b82dd31c6c3d20eb737cc0a39919cb150a7da3248a5487a0b88256b4c5cd58217cacdc0983364612e3836ac29b7271bb5918c7a407cb17bbb0693e3ca6b067761d8485892e062afd8209c88a489645fd6004a5a584e002a29f4e89150b31c2ac57daed98552b4a504318abdd7c8ff496715c7b3eacabf49b637cfecb2923641243101635551de3caac22631375ba1678124ede46682ac63a35b9704b33516c7b0e7b435a8120e57a04825c5734357109491701f065667948a1157c857728fbd96c899993e33d519f8a0ab5cb8b00b13245a6a385804e416c5f9858d87f52310daff20eea8e3368ab7a05b24d6233c6653
+   (exit 0)
+
+### $ wallet account new public --label bpubfinal
+Generated new account with account_id Public/FtdSwA8Xvk32B8bGbKpSnELg5ZPHHhbfpHejARYfpjix at path /1/0
+With pk 61c5cc38ad058522173a323c24bca3be268f429756e37522ae7f9af6b90e73e0
+   (exit 0)
+
+===== public setup: define NFT + print into a public holder =====
+
+### $ wallet token new-nft --definition-account-id bdef --master-account-id bmaster --metadata-account-id bmeta --name Private NFT Demo --printable-supply 5 --uri ipfs://demo --creators alisher
+Transaction hash is 8a67fe683ff86b50e4f12188a709be137b8bbed6252d81c977532f921c3e534f
+Transaction is included in block 90
+   (exit 0)
+
+### $ wallet token print-nft --master-account-id bmaster --printed-account-id bpubcopy
+Transaction hash is 1825786e37dc766abb1a9704dc07769e8054b33efce15b58deee94f2c904877b
+Transaction is included in block 92
+   (exit 0)
+
+### $ wallet account get --account-id bpubcopy
+Label: bpubcopy
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs","owned":true}}
+   (exit 0)
+
+===== B1 SHIELD: public -> private (bpubcopy -> bpriv1) =====
+
+### $ wallet token send --from bpubcopy --to bpriv1 --amount 1
+Transaction hash is 7d55f6b525ef76dc1061e602bd187f34fdb09b531e0c1fb979a2fffe5e39d469
+Transaction is included in block 94
+Received new acc Account {
+    program_owner: "814563917dac46806d0295fcc00139a32bcad4ca2d3d2ecb9a5be2cba91771c6",
+    balance: 0,
+    data: Data(
+        [
+            2,
+            171,
+            24,
+            116,
+            160,
+            52,
+            136,
+            207,
+            204,
+            100,
+            219,
+            149,
+            199,
+            229,
+            215,
+            28,
+            13,
+            14,
+            77,
+            73,
+            20,
+            83,
+            177,
+            163,
+            38,
+            163,
+            110,
+            167,
+            226,
+            67,
+            242,
+            237,
+            208,
+            1,
+        ],
+    ),
+    nonce: Nonce(
+        204462582176574544187259811784395459158,
+    ),
+}
+   (exit 0)
+
+### $ wallet account get --account-id bpubcopy
+Label: bpubcopy
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs","owned":false}}
+   (exit 0)
+
+### $ wallet account get --account-id bpriv1
+Label: bpriv1
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs","owned":true}}
+   (exit 0)
+
+===== B2 PRIVATE -> PRIVATE (bpriv1 -> bpriv2) =====
+
+### $ wallet token send --from bpriv1 --to bpriv2 --amount 1
+Transaction hash is b0464ad1f53477581fce66d0bd16c07445abe3814e35770a287d1905aa185a2e
+Transaction is included in block 96
+Received new acc Account {
+    program_owner: "814563917dac46806d0295fcc00139a32bcad4ca2d3d2ecb9a5be2cba91771c6",
+    balance: 0,
+    data: Data(
+        [
+            2,
+            171,
+            24,
+            116,
+            160,
+            52,
+            136,
+            207,
+            204,
+            100,
+            219,
+            149,
+            199,
+            229,
+            215,
+            28,
+            13,
+            14,
+            77,
+            73,
+            20,
+            83,
+            177,
+            163,
+            38,
+            163,
+            110,
+            167,
+            226,
+            67,
+            242,
+            237,
+            208,
+            0,
+        ],
+    ),
+    nonce: Nonce(
+        177515614638025230753148706751110241325,
+    ),
+}
+Received new acc Account {
+    program_owner: "814563917dac46806d0295fcc00139a32bcad4ca2d3d2ecb9a5be2cba91771c6",
+    balance: 0,
+    data: Data(
+        [
+            2,
+            171,
+            24,
+            116,
+            160,
+            52,
+            136,
+            207,
+            204,
+            100,
+            219,
+            149,
+            199,
+            229,
+            215,
+            28,
+            13,
+            14,
+            77,
+            73,
+            20,
+            83,
+            177,
+            163,
+            38,
+            163,
+            110,
+            167,
+            226,
+            67,
+            242,
+            237,
+            208,
+            1,
+        ],
+    ),
+    nonce: Nonce(
+        307222313415008792968139896240302998744,
+    ),
+}
+   (exit 0)
+
+### $ wallet account get --account-id bpriv1
+Label: bpriv1
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs","owned":false}}
+   (exit 0)
+
+### $ wallet account get --account-id bpriv2
+Label: bpriv2
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs","owned":true}}
+   (exit 0)
+
+===== B3 DESHIELD: private -> public (bpriv2 -> bpubfinal) =====
+
+### $ wallet token send --from bpriv2 --to bpubfinal --amount 1
+Transaction hash is d19d1a2fa2414f54192e68d9663172bb15f02f009946bff820a4fabbcefcacf8
+Transaction is included in block 98
+Received new acc Account {
+    program_owner: "814563917dac46806d0295fcc00139a32bcad4ca2d3d2ecb9a5be2cba91771c6",
+    balance: 0,
+    data: Data(
+        [
+            2,
+            171,
+            24,
+            116,
+            160,
+            52,
+            136,
+            207,
+            204,
+            100,
+            219,
+            149,
+            199,
+            229,
+            215,
+            28,
+            13,
+            14,
+            77,
+            73,
+            20,
+            83,
+            177,
+            163,
+            38,
+            163,
+            110,
+            167,
+            226,
+            67,
+            242,
+            237,
+            208,
+            0,
+        ],
+    ),
+    nonce: Nonce(
+        218001175669167455326758500787230759503,
+    ),
+}
+   (exit 0)
+
+### $ wallet account get --account-id bpriv2
+Label: bpriv2
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs","owned":false}}
+   (exit 0)
+
+### $ wallet account get --account-id bpubfinal
+Label: bpubfinal
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"CWtM1QGceRi9oB9XLcFVTTb6Nvek1a5qWwkgkbmE69Gs","owned":true}}
+   (exit 0)
+
+===== EPIC B WALK COMPLETE =====
+EXIT=0 Thu Sep  3 11:43:30 AM CEST 2026
