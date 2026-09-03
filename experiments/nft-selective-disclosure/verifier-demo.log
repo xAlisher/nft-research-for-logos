@@ -1,0 +1,26 @@
+started Thu Sep  3 12:11:14 PM CEST 2026
+== setup: accounts ==
+== define + print, then SHIELD the NFT into the private owner ==
+WARNING: proving in dev mode. This will not generate valid, secure proofs.
+WARNING: Proving in dev mode does not generate a valid receipt. Receipts generated from this process are invalid and should never be used in production.
+WARNING: proving in dev mode. This will not generate valid, secure proofs.
+WARNING: Proving in dev mode does not generate a valid receipt. Receipts generated from this process are invalid and should never be used in production.
+owner (private) holding:
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"6zt5YG1gbZqCp1wNEmzJKqDAs8qtgYzkX5Q5fdZnFECH","owned":true}}
+== owner exports viewing key (the read capability) ==
+npk=7af5be6f784c5a7d4d6282703912cda9ebbdc2825cc2da136a3948b508e13ada
+vsk_d=bfe58e59a4b045612e11f915d5ac96d7cec5f6b08e1b9010ca55ee6861bfccdd
+vsk_z=d5481d5e5587b506021099c6cf55730af0c09baeec83342bd797bd9bf0a6ed56
+
+===== VERIFIER with the CORRECT viewing key (should disclose the NFT) =====
+block 214 output 0: disclosed holding NftPrintedCopy { definition_id: 6zt5YG1gbZqCp1wNEmzJKqDAs8qtgYzkX5Q5fdZnFECH, owned: true }
+Verified 1 token holding(s) visible to this viewing key.
+Stored statistics at /home/sher/nft-build/wallet-home-c3-1788430274/statistics.json
+
+===== VERIFIER with a WRONG viewing key (should disclose nothing) =====
+Verified 0 token holding(s) visible to this viewing key.
+Stored statistics at /home/sher/nft-build/wallet-home-c3-1788430274/statistics.json
+
+===== C3 DEMO COMPLETE =====
+EXIT=0 Thu Sep  3 12:12:44 PM CEST 2026
