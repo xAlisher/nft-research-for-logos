@@ -1,19 +1,28 @@
 {
-  "collection": "Sealed · Volume I — Twelve Redactions",
-  "note": "Each piece reveals one verified Internet Archive / Wayback link. Theme: transparency, declassification, censorship-resistance. All items are officially declassified, public domain, freely-published manifestos, or archived formerly-public pages — nothing active-classified.",
+  "collection": "Sealed · Volume I — Museum of Civil Liberties",
+  "parent": "https://logos.co/past-present-future/museum-of-civil-liberties",
+  "note": "The on-chain, declassifiable wing of Logos's Museum of Civil Liberties. Each piece is a real preserved document, sealed as a redaction and revealed on the holder's terms. 15 pieces across the Museum's five halls. All items officially declassified, public domain, freely-published manifestos, or archived formerly-public pages — nothing active-classified.",
   "verified": "2026-09-03",
+  "exhibits": ["I · Control of Money","II · Surveillance State","III · Censored World","IV · Failure of Voice","V · Systems of Control"],
   "pieces": [
-    {"n":1,"cat":"declassified","type":"DECLASSIFIED","title":"Church Committee Final Report","meta":"US Senate · 1976","url":"https://archive.org/details/ChurchCommittee_FullReport"},
-    {"n":2,"cat":"declassified","type":"DECLASSIFIED","title":"The Pentagon Papers","meta":"US DoD · 1971","url":"https://archive.org/details/thepentagonpapers"},
-    {"n":3,"cat":"declassified","type":"DECLASSIFIED","title":"CIA 'Family Jewels'","meta":"CIA · 1973, rel. 2007","url":"https://archive.org/details/CIA-Family-Jewels"},
-    {"n":4,"cat":"declassified","type":"DECLASSIFIED","title":"MKUltra Document 0000017748","meta":"CIA · FOIA release","url":"https://archive.org/details/DOC_0000017748"},
-    {"n":5,"cat":"declassified","type":"DECLASSIFIED","title":"SSCI CIA Torture Report — Executive Summary","meta":"US Senate · 2014","url":"https://archive.org/details/ssci-cia-torture-report-executive-summary"},
-    {"n":6,"cat":"banned","type":"CENSORED TEXT","title":"Areopagitica","meta":"John Milton · 1644","url":"https://archive.org/details/miltonareopagitica"},
-    {"n":7,"cat":"banned","type":"CENSORED TEXT","title":"Ulysses","meta":"James Joyce · 1922","url":"https://archive.org/details/ost-english-ulysses-by-james-joyce"},
-    {"n":8,"cat":"banned","type":"CENSORED TEXT","title":"Lady Chatterley's Lover","meta":"D. H. Lawrence · 1928","url":"https://archive.org/details/lady-chatterleys-lover"},
-    {"n":9,"cat":"foundational","type":"FOUNDATIONAL TEXT","title":"A Cypherpunk's Manifesto","meta":"Eric Hughes · 1993","url":"https://archive.org/details/anarchy_Cypherpunk_Manifesto"},
-    {"n":10,"cat":"foundational","type":"FOUNDATIONAL TEXT","title":"A Declaration of the Independence of Cyberspace","meta":"J. P. Barlow · 1996","url":"https://web.archive.org/web/20260830134608/https://www.eff.org/cyberspace-independence"},
-    {"n":11,"cat":"erased","type":"WAYBACK · ERASED","title":"Climate Change — US EPA","meta":"captured 2016-11, scrubbed 2017","url":"https://web.archive.org/web/20161106014250/https://www.epa.gov/climatechange"},
-    {"n":12,"cat":"erased","type":"WAYBACK · ERASED","title":"Climate Change — The White House","meta":"captured 2017-01, removed at transition","url":"https://web.archive.org/web/20170116114025/https://www.whitehouse.gov/energy/climate-change"}
+    {"n":1,"exhibit":"I · Control of Money","status":"pending","title":"(sourcing)","meta":"verification pass running","url":""},
+    {"n":2,"exhibit":"I · Control of Money","status":"pending","title":"(sourcing)","meta":"verification pass running","url":""},
+    {"n":3,"exhibit":"I · Control of Money","status":"pending","title":"(sourcing)","meta":"verification pass running","url":""},
+
+    {"n":4,"exhibit":"II · Surveillance State","status":"verified","title":"Church Committee Final Report","meta":"US Senate · 1976","url":"https://archive.org/details/ChurchCommittee_FullReport"},
+    {"n":5,"exhibit":"II · Surveillance State","status":"verified","title":"MKUltra Document 0000017748","meta":"CIA · FOIA release","url":"https://archive.org/details/DOC_0000017748"},
+    {"n":6,"exhibit":"II · Surveillance State","status":"verified","title":"CIA 'Family Jewels'","meta":"CIA · 1973, rel. 2007","url":"https://archive.org/details/CIA-Family-Jewels"},
+
+    {"n":7,"exhibit":"III · Censored World","status":"verified","title":"Areopagitica","meta":"John Milton · 1644","url":"https://archive.org/details/miltonareopagitica"},
+    {"n":8,"exhibit":"III · Censored World","status":"verified","title":"Ulysses","meta":"James Joyce · 1922","url":"https://archive.org/details/ost-english-ulysses-by-james-joyce"},
+    {"n":9,"exhibit":"III · Censored World","status":"verified","title":"Lady Chatterley's Lover","meta":"D. H. Lawrence · 1928","url":"https://archive.org/details/lady-chatterleys-lover"},
+
+    {"n":10,"exhibit":"IV · Failure of Voice","status":"verified","title":"The Pentagon Papers","meta":"US DoD · 1971","url":"https://archive.org/details/thepentagonpapers"},
+    {"n":11,"exhibit":"IV · Failure of Voice","status":"verified","title":"A Declaration of the Independence of Cyberspace","meta":"J. P. Barlow · 1996","url":"https://web.archive.org/web/20260830134608/https://www.eff.org/cyberspace-independence"},
+    {"n":12,"exhibit":"IV · Failure of Voice","status":"verified","title":"A Cypherpunk's Manifesto","meta":"Eric Hughes · 1993","url":"https://archive.org/details/anarchy_Cypherpunk_Manifesto"},
+
+    {"n":13,"exhibit":"V · Systems of Control","status":"verified","title":"SSCI CIA Torture Report — Executive Summary","meta":"US Senate · 2014","url":"https://archive.org/details/ssci-cia-torture-report-executive-summary"},
+    {"n":14,"exhibit":"V · Systems of Control","status":"verified","title":"Climate Change — US EPA","meta":"captured 2016 · scrubbed 2017","url":"https://web.archive.org/web/20161106014250/https://www.epa.gov/climatechange"},
+    {"n":15,"exhibit":"V · Systems of Control","status":"verified","title":"Climate Change — The White House","meta":"captured 2017 · removed at transition","url":"https://web.archive.org/web/20170116114025/https://www.whitehouse.gov/energy/climate-change"}
   ]
 }
