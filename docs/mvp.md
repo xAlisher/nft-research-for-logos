@@ -29,7 +29,9 @@ Nothing on Ethereum, Solana, or Bitcoin can do this. On all three, ownership is 
 
 ## 4. The blocking gap the MVP must clear first
 
-The wallet ATA layer returns `"unsupported token type"` for `NftMaster`/`NftPrintedCopy` (`lez/wallet/src/cli/programs/ata.rs:208`) [CODE — 90%]. **Before any privacy story, an NFT must be mintable/printable/transferable end-to-end from the wallet.** This is Epic A below and is a prerequisite; it is also, by itself, exactly the dogfooding deliverable.
+The wallet ATA layer returns `"unsupported token type"` for `NftMaster`/`NftPrintedCopy` (`lez/wallet/src/cli/programs/ata.rs:208-209`) [CONFIRMED, see [`verification.md`](verification.md)]. **Before any privacy story, an NFT must be mintable/printable/transferable end-to-end from the wallet.** This is Epic A below and is a prerequisite; it is also, by itself, exactly the dogfooding deliverable.
+
+**Good news from verification:** the NFT *transfer* logic already exists in the program — `token/src/transfer.rs:72-94` performs the `NftPrintedCopy` ownership flip (`sender_owned=false; recipient_owned=true`), `NftMaster` at :50-54. So Epic A is **wallet plumbing over existing program semantics**, not new program logic. And the privacy layer is account-data-agnostic (commits opaque `account.data`), so an NFT holding shields/transfers privately through the same path as a fungible one — Epic B is de-risked. Full evidence in [`verification.md`](verification.md).
 
 ## 5. Epics → issues (implementation-ready)
 
@@ -41,6 +43,7 @@ The wallet ATA layer returns `"unsupported token type"` for `NftMaster`/`NftPrin
 - **A5.** End-to-end dogfooding walk following Journey logos-docs#454, capturing every gap as a doc/issue. _Accept: a written run-log + filed doc-fixes._
 
 ### Epic B — Private ownership (Phase 1, the differentiator)
+- **B0. (trivial-experiment-first — do this before scoping the rest of B).** Shield ONE printed-copy NFT into a private account and private-transfer it exactly once, headlessly. This proves the NFT-through-privacy path end-to-end (structurally sound but unproven end-to-end — the riskiest assumption, see [`verification.md`](verification.md)). _Accept: one NFT shielded + one private hop, chain shows no owner/edge. If it passes, the rest of B follows with high confidence._
 - **B1.** Mint/shield an NFT **into a private account** (public→private "shielded" transfer of a printed copy). _Accept: chain shows only a commitment + ciphertext + nullifier for the holding; no public `ownerOf` equivalent._
 - **B2.** Private→private NFT transfer (unlinkable hop). _Accept: no on-chain edge links sender to recipient; recipient's wallet recovers the NFT by scanning `view_tag`-filtered blobs._
 - **B3.** Deshield an NFT (private→public) — the "reveal for sale" path. _Accept: ownership becomes publicly verifiable; provenance before the reveal stays unlinkable._

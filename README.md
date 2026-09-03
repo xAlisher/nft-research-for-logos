@@ -8,9 +8,10 @@ Every incumbent (ETH/SOL/BTC) is public-by-construction on **who owns a token**.
 ## Contents
 - **[`docs/analysis-and-strategy.md`](docs/analysis-and-strategy.md)** — comparative matrix, what each chain teaches, ranked differentiators, phased strategy, risks.
 - **[`docs/mvp.md`](docs/mvp.md)** — the narrowed, buildable MVP (private ownership) → epics A–D → implementation-ready issues.
+- **[`docs/verification.md`](docs/verification.md)** — adversarial source-check verdict (every claim confirmed at real file:line; MVP buildable, with the riskiest assumption flagged).
 - **`research/`** — evidence-tagged findings, source-linked (Sina discipline: `[CODE]`/`[CONFIRMED]`/`[H — X%]`):
   - [`eth-nfts.md`](research/eth-nfts.md) · [`sol-nfts.md`](research/sol-nfts.md) · [`btc-ordinals.md`](research/btc-ordinals.md) · [`logos-primitives.md`](research/logos-primitives.md)
 - `docs/retro-log.md` — session retro log.
 
 ## Status
-Research complete + synthesized (2026-09-03). Verified adversarially (Codex). Epics/issues filed — see the repo's Issues tab. Ready for implementation prioritization.
+Research complete + synthesized + source-verified (2026-09-03). Every load-bearing claim confirmed against the actual LEZ source; an independent Codex pass was also launched. Epics/issues filed — see the repo's Issues tab. Ready for implementation prioritization.
