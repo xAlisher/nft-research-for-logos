@@ -5,9 +5,9 @@
   "verified": "2026-09-03",
   "exhibits": ["I · Control of Money","II · Surveillance State","III · Censored World","IV · Failure of Voice","V · Systems of Control"],
   "pieces": [
-    {"n":1,"exhibit":"I · Control of Money","status":"pending","title":"(sourcing)","meta":"verification pass running","url":""},
-    {"n":2,"exhibit":"I · Control of Money","status":"pending","title":"(sourcing)","meta":"verification pass running","url":""},
-    {"n":3,"exhibit":"I · Control of Money","status":"pending","title":"(sourcing)","meta":"verification pass running","url":""},
+    {"n":1,"exhibit":"I · Control of Money","status":"verified","title":"Executive Order 6102 — Gold Confiscation","meta":"F.D. Roosevelt · 1933","url":"https://archive.org/details/pdfy-MHvlymfJYU05yELW"},
+    {"n":2,"exhibit":"I · Control of Money","status":"verified","title":"Nixon Closes the Gold Window","meta":"White House · 1971","url":"https://archive.org/details/1971-president-nixon-address-to-the-nation-outlining-a-new-economic-policy-the-c"},
+    {"n":3,"exhibit":"I · Control of Money","status":"verified","title":"Bank Secrecy Act — 'Patterns of Abuse'","meta":"US Senate · 2013","url":"https://archive.org/details/gov.gpo.fdsys.CHRG-113shrg80662"},
 
     {"n":4,"exhibit":"II · Surveillance State","status":"verified","title":"Church Committee Final Report","meta":"US Senate · 1976","url":"https://archive.org/details/ChurchCommittee_FullReport"},
     {"n":5,"exhibit":"II · Surveillance State","status":"verified","title":"MKUltra Document 0000017748","meta":"CIA · FOIA release","url":"https://archive.org/details/DOC_0000017748"},

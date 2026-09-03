@@ -24,7 +24,9 @@ Its thesis: *"Your freedoms are eroding. We're creating the record. So current a
 
 | # | Exhibit | Piece | Status |
 |---|---|---|---|
-| 1–3 | **I · Control of Money** | (verification pass running — e.g. EO 6102 gold confiscation, Bank Secrecy Act, Operation Choke Point) | pending verified links |
+| 1 | **I · Control of Money** | Executive Order 6102 — Gold Confiscation (FDR, 1933) | verified |
+| 2 | I · Control of Money | Nixon Closes the Gold Window (White House, 1971) | verified |
+| 3 | I · Control of Money | Bank Secrecy Act — "Patterns of Abuse" (US Senate, 2013) | verified |
 | 4 | **II · Surveillance State** | Church Committee Final Report | verified |
 | 5 | II · Surveillance State | MKUltra Document 0000017748 | verified |
 | 6 | II · Surveillance State | CIA "Family Jewels" | verified |
