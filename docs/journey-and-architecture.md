@@ -58,5 +58,30 @@ COLLECTOR: open Sealed module → wallet_ffi_open (login) → sync → see seale
 3. Use **key-handoff distribution** for the 15-piece demo (gap #5 deferred).
 4. Treat **wallet-connect** (gap #3) as a stretch — in-process `open` is fine for the demo; a real "Login with Logos Wallet" across apps is a fork worth scoping separately (and broadly useful beyond this collection).
 
+## Key collection (shield-to-recipient) & the receiver journey
+
+Chosen distribution: **shield-to-recipient** — you collect each recipient's receive-key first, then shield a piece to them. All supported by `wallet-ffi`:
+
+- **Generate (receiver side):** `wallet_ffi_create_private_accounts_key` → `FfiPrivateAccountKeys { nullifier_public_key (npk, 32B), viewing_public_key (vpk, 1184B ML-KEM) }`.
+- **Shield (your side):** `wallet_ffi_transfer_shielded(from, to_keys = {npk, vpk}, to_identifier, amount=1, …)` — takes exactly the recipient's npk+vpk. The recipient discovers the incoming piece by running `sync` (the identifier need not be shared; the scan finds it).
+
+**Can collection be done through a Basecamp module? Yes — generation + display can.** The module calls `create_private_accounts_key` and shows the npk+vpk as a copyable **"receive key"** (best: an **exported `.keys` file** — vpk is 1184 bytes, too long to paste and bulky as a QR). What a module can't do alone is *centrally collect* many keys — there's no on-chain "register to receive." So the transport is **out-of-band**: recipients export their `.keys` and send it to you (Discord/form/upload), you keep the list and batch-shield. (A submission endpoint could automate collection later; not needed for a 15-recipient demo.)
+
+### Receiver journey (step by step)
+1. **Install** the Sealed module in Basecamp (from the catalog).
+2. **Wallet:** on first run, create a wallet (`wallet_ffi_create_new` → shows a mnemonic to back up) or open an existing one (`wallet_ffi_open`). This is their identity + keys.
+3. **Get receive-key:** tap "Get my claim key" → module runs `create_private_accounts_key` → shows npk + vpk and offers **Export `.keys`**.
+4. **Send it to the curator** (out-of-band). ← *this is the key-collection step*
+5. *(You shield a piece to their key — off-stage: `transfer_shielded`.)*
+6. **Sync:** receiver taps Sync → `wallet_ffi_sync_to_block` → the incoming private NFT is discovered.
+7. **Sealed gallery:** their piece appears as a redaction sheet. No one else can see they hold it (private ownership).
+8. **Declassify:** tap the piece → viewing key decrypts the `{link, note}` payload → archive.org link + curatorial note + **copy / open**.
+9. **Optional:** `deshield` for a public reveal, or export the viewing key so a chosen party can verify ownership (Epic C) without exposing the wallet.
+
+### Extra gaps this surfaces
+- **Central key collection** = out-of-band for now (no register-to-receive); a submission form/endpoint is a later nicety.
+- **`.keys` transport UX** — module should export/import a `.keys` file (npk line 1, vpk line 2), matching the CLI `--to-keys` convention; QR is impractical at 1184 bytes.
+- Ties back to **gap #2 (payload storage)**: the `{link,note}` ciphertext must be attached at shield time and keyed to the recipient's viewing key — so you encrypt per-recipient once you have their vpk.
+
 ## Governance
 Module + Museum branding are outward-facing → run past Franck/leadership (and Eric for content) before anything official. Groundwork (module, mint, mechanic) proceeds internally regardless.
