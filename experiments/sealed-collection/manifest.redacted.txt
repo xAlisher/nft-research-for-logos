@@ -1,0 +1,7 @@
+definition|Hau6UQomY2NPwwiuZzgni2v8GVzHJPg6NY4Pq9MHm1sk
+piece|1|sealed|7JMVYRCTbsK8L3mvHc6RPSQmU1qKt7J2NCwFHRJDfLbd|HN242AC6gSKVtcfRfsCRfhxvA7yDCbj46VASYJ1GBwLB|<npk redacted>|<vsk_d redacted>|<vsk_z redacted>
+piece|2|sealed|CSrt9E25BQSGQTfnJwsWfdNSeX43iLpQgk1YfwnjQwHB|4bg5Cqfp5XRnzsSBhEYqgznrnvrKerZ9JWNSAUp859Rj|<npk redacted>|<vsk_d redacted>|<vsk_z redacted>
+piece|3|sealed|735hkxU5S1wzL1BdHySsvhskGAG8n4DMqQZJxs3Zmnjy|FETBp7wikWypuMEY59ixjsodaW5xS5FVCkNafDUFTbfD|<npk redacted>|<vsk_d redacted>|<vsk_z redacted>
+piece|4|revealed|ArfrwfPXA4QcPxW94V3qzsHMZWEjg27aYGKYiMhtrUMF|||
+piece|5|revealed|HKehQ5wbAybtomzLFq1yPAuk51DJSaTuPcLMLaVbFizQ|||
+piece|6|revealed|2XRMxkdBrJt9HmoX2jepd5QsQCasiV6woHoE3n8nyAMc|||
