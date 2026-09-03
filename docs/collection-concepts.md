@@ -63,5 +63,13 @@ The **reveal (deshield)** is the artistic climax: the seal dissolves into the re
 ### Lore / positioning
 Parallel-society framing: the pieces are **sovereign records** disclosed only under the holder's own authority. Declassification, not a "reveal button." The privacy is the story, and the collection is an argument for the stack.
 
+## LOCKED SPEC — "Sealed · Volume I" (2026-09-03)
+
+- **Art:** Direction C, minimal — an A4 sheet of black redaction bars on paper, generated deterministically from each piece's commitment. No text, no seal.
+- **Payload (the education layer):** each NFT carries an **encrypted Internet Archive URL** — unreadable while sealed, decrypted on reveal. Content theme: transparency / declassification / censorship-resistance (declassified docs, banned texts, Wayback snapshots of erased pages). archive.org chosen over WikiLeaks for legal safety + durability + on-brand preservation ethos; WikiLeaks left as a separate legal/leadership escalation, not acted on.
+- **Size:** 12 pieces (curated), extensible in future volumes.
+- **Reveal mechanic:** proven in [`../experiments/sealed-collection/reveal_mechanic.py`](../experiments/sealed-collection/reveal_mechanic.py) — a URL is sealed under a key derived from the owner's viewing secret; correct key reveals the archive.org link, wrong key cannot. A dependency-free stand-in for the on-chain ML-KEM+ChaCha20+viewing-key path already proven in `experiments/nft-selective-disclosure`.
+- **On-chain:** collection minted (slice 1, `experiments/sealed-collection/`); sealed pieces held in private accounts (no public owner), revealed via deshield or viewing-key decode.
+
 ## Honesty
-This is a testnet showcase: dev-mode proving, no real market, art/metadata handling still off-chain-plaintext until private metadata lands (concept 6 dependency). The point is to **demonstrate the ownership/provenance/disclosure differentiators**, which are real and now proven, not to ship a market.
+This is a testnet showcase: dev-mode proving, no real market. Payloads are public Internet Archive links (legally safe); the encrypted-URL mechanic is a faithful stand-in for the proven on-chain crypto. The point is to **demonstrate the ownership/provenance/disclosure differentiators**, now proven end-to-end.
