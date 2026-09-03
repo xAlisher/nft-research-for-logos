@@ -34,8 +34,8 @@ Its thesis: *"Your freedoms are eroding. We're creating the record. So current a
 | 8 | III · Censored World | Ulysses (Joyce) | verified |
 | 9 | III · Censored World | Lady Chatterley's Lover | verified |
 | 10 | **IV · Failure of Voice** | The Pentagon Papers | verified |
-| 11 | IV · Failure of Voice | Declaration of the Independence of Cyberspace (Barlow) | verified |
-| 12 | IV · Failure of Voice | A Cypherpunk's Manifesto (Hughes) | verified |
+| 11 | IV · Failure of Voice | COINTELPRO — the FBI's war on dissent (1967–71) | verified |
+| 12 | IV · Failure of Voice | FBI threat letter to Dr. King (1963) | verified |
 | 13 | **V · Systems of Control** | SSCI CIA Torture Report — Exec. Summary | verified |
 | 14 | V · Systems of Control | Climate Change — US EPA (erased 2017) | verified |
 | 15 | V · Systems of Control | Climate Change — The White House (erased 2017) | verified |

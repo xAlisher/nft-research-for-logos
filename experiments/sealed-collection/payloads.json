@@ -1,7 +1,7 @@
 {
   "collection": "Sealed · Volume I — Museum of Civil Liberties",
   "parent": "https://logos.co/past-present-future/museum-of-civil-liberties",
-  "note": "The on-chain, declassifiable wing of Logos's Museum of Civil Liberties. Each piece is a real preserved document, sealed as a redaction and revealed on the holder's terms. 15 pieces across the Museum's five halls. All items officially declassified, public domain, freely-published manifestos, or archived formerly-public pages — nothing active-classified.",
+  "note": "The on-chain, declassifiable wing of Logos's Museum of Civil Liberties. Each piece seals an ENCRYPTED Internet Archive LINK behind a redaction (the linked document is public on the Archive; the link — and which record a holder owns, and when they reveal it — is private, decrypted only with the owner's viewing key). 15 pieces across the Museum's five halls. All items officially declassified, public domain, or archived formerly-public pages — nothing active-classified.",
   "verified": "2026-09-03",
   "exhibits": ["I · Control of Money","II · Surveillance State","III · Censored World","IV · Failure of Voice","V · Systems of Control"],
   "pieces": [
@@ -18,8 +18,8 @@
     {"n":9,"exhibit":"III · Censored World","status":"verified","title":"Lady Chatterley's Lover","meta":"D. H. Lawrence · 1928","url":"https://archive.org/details/lady-chatterleys-lover"},
 
     {"n":10,"exhibit":"IV · Failure of Voice","status":"verified","title":"The Pentagon Papers","meta":"US DoD · 1971","url":"https://archive.org/details/thepentagonpapers"},
-    {"n":11,"exhibit":"IV · Failure of Voice","status":"verified","title":"A Declaration of the Independence of Cyberspace","meta":"J. P. Barlow · 1996","url":"https://web.archive.org/web/20260830134608/https://www.eff.org/cyberspace-independence"},
-    {"n":12,"exhibit":"IV · Failure of Voice","status":"verified","title":"A Cypherpunk's Manifesto","meta":"Eric Hughes · 1993","url":"https://archive.org/details/anarchy_Cypherpunk_Manifesto"},
+    {"n":11,"exhibit":"IV · Failure of Voice","status":"verified","title":"COINTELPRO — The FBI's War on Dissent","meta":"FBI · 1967–71","url":"https://archive.org/details/FBI-COINTELPRO-BLACK"},
+    {"n":12,"exhibit":"IV · Failure of Voice","status":"verified","title":"FBI Threat Letter to Dr. King","meta":"FBI · 1963","url":"https://archive.org/details/fbi-martin-luther-king-jr-threat-letter-leaked-declassified"},
 
     {"n":13,"exhibit":"V · Systems of Control","status":"verified","title":"SSCI CIA Torture Report — Executive Summary","meta":"US Senate · 2014","url":"https://archive.org/details/ssci-cia-torture-report-executive-summary"},
     {"n":14,"exhibit":"V · Systems of Control","status":"verified","title":"Climate Change — US EPA","meta":"captured 2016 · scrubbed 2017","url":"https://web.archive.org/web/20161106014250/https://www.epa.gov/climatechange"},
