@@ -1,0 +1,117 @@
+BUILD_DONE
+===== node liveness =====
+[2m2026-09-03T09:36:33.716302Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 5.71381ms
+[2026-09-03T09:36:33Z INFO  sequencer_service] Block with id 72 created
+
+===== 1. create labeled public accounts =====
+
+### $ wallet account new public --label nftdef
+Persistent storage not found, need to execute setup
+Input password: Statistics not found, choosing empty
+
+IMPORTANT: Write down your recovery phrase and store it securely.
+This is the only way to recover your wallet if you lose access.
+
+Recovery phrase:
+  fade maximum axis easy humble cross evidence inmate asset motor almost coconut crumble quarter snake jewel wire eagle order isolate crush term marriage surge
+
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Generated new account with account_id Public/25jb5nTrxDer29KuT7CzRwoMxKyFoJQp9XDMynJfyXLZ at path /0
+With pk aaf9d6e131f852c6088b6ffd10ef800278e3f29ed7bc8267265b5ec35a9bb712
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+### $ wallet account new public --label nftmaster
+Generated new account with account_id Public/2nPLoswHAfYeKF298TrSbevzngPAagMEFtbLycXCNzyV at path /1
+With pk 6fab4139479745041e4adbd8526bc94a5ccc325063efe65f3b91da58af84a263
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+### $ wallet account new public --label nftmeta
+Generated new account with account_id Public/7bMQ7A5Dqo547fdufkzFtyzcrpGDoVXWoj1V9pCkWmYc at path /0/0
+With pk e3762f7d01dcb3016329c3360469b4a4754ea9e8dba0131d0f9f9cb5b26b467a
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+### $ wallet account new public --label nftcopy
+Generated new account with account_id Public/DNb7pNNvSxbmSWgqfcgXJxGBUYJuncw5WwU2qzHGUHv8 at path /2
+With pk dd20ea3eb6baccc3374e672d3ad7b30a17488acd1e40788b2972aa13ace563df
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+### $ wallet account new public --label nftrecipient
+Generated new account with account_id Public/F5xTisfVqxNTvNRXT7EfzjXNBtZWDsrcGZHRjAxhpQC at path /1/0
+With pk 733429a4ce1e2f9568290cd880ae1317cad9cdc556f353b8d67c65689ea623e8
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+===== 2. define the NFT (new-nft: definition + master + metadata) =====
+
+### $ wallet token new-nft --definition-account-id nftdef --master-account-id nftmaster --metadata-account-id nftmeta --name Genesis Private NFT --printable-supply 5 --uri ipfs://demo-cid --creators alisher
+Transaction hash is 27c788e1a6882974595a2871fdab7319ec78400a8368282e03bd6863b00aa3c9
+Transaction is included in block 73
+Transaction data is Public(PublicTransaction { message: Message { program_id: "814563917dac46806d0295fcc00139a32bcad4ca2d3d2ecb9a5be2cba91771c6", account_ids: [25jb5nTrxDer29KuT7CzRwoMxKyFoJQp9XDMynJfyXLZ, 2nPLoswHAfYeKF298TrSbevzngPAagMEFtbLycXCNzyV, 7bMQ7A5Dqo547fdufkzFtyzcrpGDoVXWoj1V9pCkWmYc], nonces: [Nonce(0), Nonce(0), Nonce(0)], instruction_data: [2, 1, 19, 1701733703, 544434547, 1986622032, 543519841, 5523022, 5, 0, 0, 0, 0, 15, 1936093289, 1680813882, 762277221, 6580579, 7, 1936288865, 7497064] }, witness_set: WitnessSet { signatures_and_public_keys: [(6b4409bb8fd4c7fafbf6f596a7340c92ace6d2ea3ddbbf3dd73a83039769ff9409d125dc1d1f1284b2ffc9f109b76e4d0221ac2d4aba9c84aeb7c8e1e5f36e7e, aaf9d6e131f852c6088b6ffd10ef800278e3f29ed7bc8267265b5ec35a9bb712), (c13747686fc3458579949832593fec70efbdd382de2b16090159be82d4df68a15ea6a1e4b7d61be59e5a7ad79857f28d166aa9a07930d505e0246641d70ebf0e, 6fab4139479745041e4adbd8526bc94a5ccc325063efe65f3b91da58af84a263), (caf4e2da984dfac2f6709f6a14ee617242f4a0d1ea33795f3d172346f0a211bee317f0fed8b8e69d45b7ea20b7c6a003a00059efbd228c6e107a3d370e0cd4fe, e3762f7d01dcb3016329c3360469b4a4754ea9e8dba0131d0f9f9cb5b26b467a)] } })
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+===== 3. verify master holding (expect NftMaster) =====
+
+### $ wallet account get --account-id nftmaster
+Label: nftmaster
+Holding account owned by token program
+{"NftMaster":{"definition_id":"25jb5nTrxDer29KuT7CzRwoMxKyFoJQp9XDMynJfyXLZ","print_balance":5}}
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+===== 4. print an NFT copy (master -> nftcopy) =====
+
+### $ wallet token print-nft --master-account-id nftmaster --printed-account-id nftcopy
+Transaction hash is e9ac6d0dcd050c8075660a9936555294de713d38c46ebd937a6adfcf49e98337
+Transaction is included in block 75
+Transaction data is Public(PublicTransaction { message: Message { program_id: "814563917dac46806d0295fcc00139a32bcad4ca2d3d2ecb9a5be2cba91771c6", account_ids: [2nPLoswHAfYeKF298TrSbevzngPAagMEFtbLycXCNzyV, DNb7pNNvSxbmSWgqfcgXJxGBUYJuncw5WwU2qzHGUHv8], nonces: [Nonce(1), Nonce(0)], instruction_data: [6] }, witness_set: WitnessSet { signatures_and_public_keys: [(15077b0491acad2f8e474289644101b88ce233d6a732a7cb8ca1654a30de504c212e13c3a0d9c72628a82ae65025cf3c7354558350dc2a0885a4fa56b8d78570, 6fab4139479745041e4adbd8526bc94a5ccc325063efe65f3b91da58af84a263), (a58c4e8b20236b8b9439d3cc693806f9febdc000eaf60fce858bea79c5e37472e59c56b2e069a5e1a8b56dbd5d8f4e7539802780581df961d86c0745cbf0a784, dd20ea3eb6baccc3374e672d3ad7b30a17488acd1e40788b2972aa13ace563df)] } })
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+===== 5. verify printed copy (expect owned) =====
+
+### $ wallet account get --account-id nftcopy
+Label: nftcopy
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"25jb5nTrxDer29KuT7CzRwoMxKyFoJQp9XDMynJfyXLZ","owned":true}}
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+===== 6. transfer the NFT copy (amount 1: nftcopy -> nftrecipient) =====
+
+### $ wallet token send --from nftcopy --to nftrecipient --amount 1
+Transaction hash is 5d313f621ec8e5ab92c7d2c596096c2a027ff7cb42d415770405e22915c44621
+Transaction is included in block 77
+Transaction data is Public(PublicTransaction { message: Message { program_id: "814563917dac46806d0295fcc00139a32bcad4ca2d3d2ecb9a5be2cba91771c6", account_ids: [DNb7pNNvSxbmSWgqfcgXJxGBUYJuncw5WwU2qzHGUHv8, F5xTisfVqxNTvNRXT7EfzjXNBtZWDsrcGZHRjAxhpQC], nonces: [Nonce(1), Nonce(0)], instruction_data: [0, 1, 0, 0, 0] }, witness_set: WitnessSet { signatures_and_public_keys: [(3253aeb5c75258e458815769147bc44e015caf24f36209618c8955702ec5e9118412f79495da1d55fcc32f23fc26456ec0bb495d23f5480d86f1346845c714fd, dd20ea3eb6baccc3374e672d3ad7b30a17488acd1e40788b2972aa13ace563df), (e9f057078adddfee6d4349c6b339107304686a182da4179ee87dc2f25607ba9b88c94f8857059ab9112696d88da5fef67073bef15480e28f3314df4d4c8318a9, 733429a4ce1e2f9568290cd880ae1317cad9cdc556f353b8d67c65689ea623e8)] } })
+Stored persistent accounts at /home/sher/nft-build/wallet-home-1788428200/storage.json
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+===== 7. verify: sender no longer owns, recipient owns =====
+
+### $ wallet account get --account-id nftcopy
+Label: nftcopy
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"25jb5nTrxDer29KuT7CzRwoMxKyFoJQp9XDMynJfyXLZ","owned":false}}
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+### $ wallet account get --account-id nftrecipient
+Label: nftrecipient
+Holding account owned by token program
+{"NftPrintedCopy":{"definition_id":"25jb5nTrxDer29KuT7CzRwoMxKyFoJQp9XDMynJfyXLZ","owned":true}}
+Stored statistics at /home/sher/nft-build/wallet-home-1788428200/statistics.json
+   (exit 0)
+
+===== WALK COMPLETE =====

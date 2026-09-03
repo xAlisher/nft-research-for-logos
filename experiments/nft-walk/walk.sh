@@ -4,7 +4,7 @@ set -uo pipefail
 export PATH="$HOME/.risc0/bin:$HOME/.cargo/bin:$PATH"
 export RISC0_DEV_MODE=1
 W="$HOME/nft-build/target/release/wallet"
-HD="$HOME/nft-build/wallet-home"
+HD="$HOME/nft-build/wallet-home-$(date +%s)"
 mkdir -p "$HD"
 cp -f "$HOME/nft-build/lez/lez/wallet/configs/debug/wallet_config.json" "$HD/wallet_config.json"
 export LEE_WALLET_HOME_DIR="$HD"
