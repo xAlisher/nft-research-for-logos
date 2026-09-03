@@ -32,7 +32,7 @@ VERIFIER with WRONG viewing key   -> Verified 0 holdings
 ```
 A chosen verifier confirms ownership from the chain with only the viewing key; no one else can, and the verifier never has the spend key. This is the read-only wrapper over the wallet's decrypt path (`EncryptionScheme::decrypt` + `SharedSecretKey::decapsulate`).
 
-Remaining (optional polish): a screen recording + a web "Prove It" widget wrapping this command (see [`../../docs/sealed-art-and-mechanics.md`](../../docs/sealed-art-and-mechanics.md) #2). Unlocks the **"Keyholder"** collection tier (docs/collection-concepts.md #4).
+Remaining (optional polish): a screen recording + a web "Prove It" widget wrapping this command (see [`../../docs/collection-concepts.md`](../../docs/collection-concepts.md), "Sealed — art & mechanics" #2). Unlocks the **"Keyholder"** collection tier (docs/collection-concepts.md #4).
 
 ## Honesty
 Dev-mode proving for the surrounding stack; the disclosure crypto itself is the production path (ML-KEM-768 + ChaCha20), exercised directly. The zk "prove a rare trait without revealing which token" variant is a separate Phase-2 build, not this.
