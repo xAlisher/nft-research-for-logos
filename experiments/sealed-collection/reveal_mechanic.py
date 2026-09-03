@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Sealed collection — encrypted-payload reveal mechanic.
 
-Each NFT carries an encrypted payload (an Internet Archive URL). It is unreadable
+Each NFT carries an encrypted payload (an Internet Archive link + a short curatorial note). It is unreadable
 until REVEAL: the owner re-derives a per-piece key from their viewing secret and
 decrypts. Wrong key -> authentication fails -> nothing is revealed.
 
@@ -57,17 +57,22 @@ if __name__ == "__main__":
     OWNER_VSK = "f66fc630c2803e4b40c8b10496b00b19424ee922278d9e7a0a78ca80f9a784ea"
     WRONG_VSK = "00" * 32
 
+    # Each payload = the Internet Archive link + a short curatorial note ("why it's in the
+    # Museum"). BOTH are encrypted; the whole payload is revealed together on decrypt.
     pieces = [
-        ("piece-01", "https://web.archive.org/web/2001/http://example.org/erased-page"),
-        ("piece-02", "https://archive.org/details/cypherpunk-manifesto"),
-        ("piece-03", "https://archive.org/details/church-committee-report"),
+        ("piece-01", {"url": "https://archive.org/details/pdfy-MHvlymfJYU05yELW",
+                      "note": "By decree, holding your own gold became a crime."}),
+        ("piece-11", {"url": "https://archive.org/details/FBI-COINTELPRO-BLACK",
+                      "note": "The FBI's covert program to 'expose, disrupt, and neutralize' dissent."}),
+        ("piece-14", {"url": "https://web.archive.org/web/20161106014250/https://www.epa.gov/climatechange",
+                      "note": "A government science page, deleted at a change of power."}),
     ]
 
     print("== SEAL (mint time) ==")
     sealed = []
-    for pid, url in pieces:
+    for pid, payload in pieces:
         k = derive_key(OWNER_VSK, pid)
-        blob = seal(url, k)
+        blob = seal(json.dumps(payload), k)
         sealed.append((pid, blob))
         print(f"  {pid}: SEALED -> {redacted(blob)}")
         print(f"           blob = {blob[:56]}...")
@@ -75,7 +80,9 @@ if __name__ == "__main__":
     print("\n== REVEAL with the CORRECT viewing key (owner) ==")
     for pid, blob in sealed:
         k = derive_key(OWNER_VSK, pid)
-        print(f"  {pid}: {reveal(blob, k)}")
+        p = json.loads(reveal(blob, k))
+        print(f"  {pid}: {p['url']}")
+        print(f"           note: {p['note']}")
 
     print("\n== REVEAL with a WRONG viewing key (anyone else) ==")
     for pid, blob in sealed:
@@ -83,4 +90,4 @@ if __name__ == "__main__":
         r = reveal(blob, k)
         print(f"  {pid}: {'<cannot reveal>' if r is None else r}")
 
-    print("\nMechanic OK: the archive.org URL is unreadable until revealed with the owner's viewing key.")
+    print("\nMechanic OK: the link + curatorial note are unreadable until revealed with the owner's viewing key.")
