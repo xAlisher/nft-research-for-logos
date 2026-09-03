@@ -19,6 +19,14 @@ Then the recipient's **single viewing key** `(d, z)`:
 
 A **wrong** viewing key recovers **neither** — it can't decrypt the payload, and it derives a different account id, so the shielded NFT isn't its. Payload and NFT are bound to the same receive-key.
 
+## Transport = metadata.uri (chosen default, PROVEN)
+`nft_metadata_uri_transport.rs` — `metadata_uri_carries_encrypted_payload_and_only_recipient_key_reveals_it ... ok`. The encrypted `{link,note}` is borsh-serialized + hex, carried **on-chain** in the NFT definition's `metadata.uri`:
+- **Blob = 2818 bytes**, well under the 100 KiB `DATA_MAX_LENGTH` — fits with huge headroom.
+- Round-trips through the real `TokenMetadata` ↔ `Data` encoding.
+- Only the recipient's viewing key decrypts it (wrong key fails).
+- On-chain + durable: **no external storage, no host node online required** (Logos Storage is the fallback only for large media that exceeds 100 KiB — see `../../research/logos-storage-discovery.md`).
+- KDF salt is a deterministic commitment derived from the public `definition_id`, so the recipient reconstructs it without extra data.
+
 ## Why this closes gap #2
 Gap #2 was: the NFT holding only stores `owned:bool`, so the `{link,note}` needs a home + key-wrapping to the owner. This shows the payload can be encrypted to the recipient's viewing key with the **same primitives** the chain already uses, and revealed with the **same key** that owns the NFT. Remaining productization: choose the ciphertext's transport (token `metadata.uri` blob vs Codex) — a storage-location choice, not a crypto question.
 
