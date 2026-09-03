@@ -11,7 +11,7 @@ Every incumbent (ETH/SOL/BTC) is public-by-construction on **who owns a token**.
 - **[`docs/verification.md`](docs/verification.md)** — adversarial source-check verdict (every claim confirmed at real file:line; MVP buildable, with the riskiest assumption flagged).
 - **[`docs/collection-concepts.md`](docs/collection-concepts.md)** — testnet NFT collection concepts that showcase the differentiators (lead: "Sealed"). Each mapped to a primitive + issue.
 - **`research/`** — evidence-tagged findings, source-linked (Sina discipline: `[CODE]`/`[CONFIRMED]`/`[H — X%]`):
-  - [`eth-nfts.md`](research/eth-nfts.md) · [`sol-nfts.md`](research/sol-nfts.md) · [`btc-ordinals.md`](research/btc-ordinals.md) · [`logos-primitives.md`](research/logos-primitives.md)
+  - [`media-storage.md`](research/media-storage.md) — NFT media storage options (Codex/inscriptions/uri/encrypted); [`eth-nfts.md`](research/eth-nfts.md) · [`sol-nfts.md`](research/sol-nfts.md) · [`btc-ordinals.md`](research/btc-ordinals.md) · [`logos-primitives.md`](research/logos-primitives.md)
 - `docs/retro-log.md` — session retro log.
 
 ## Status
