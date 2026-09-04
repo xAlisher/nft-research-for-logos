@@ -1,4 +1,4 @@
-# 0.1.2 — on-chain Sealed record discovery (live on Sneg :3040)
+# 0.1.2 — on-chain Sealed record discovery (live on our LEZ test node :3040)
 
 `wallet sealed-records` walks every account the wallet holds, keeps the NFT holdings
 (NftMaster / NftPrintedCopy), and resolves each:

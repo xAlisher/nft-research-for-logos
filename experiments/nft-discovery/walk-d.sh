@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 0.1.2 discovery walk against the local LEZ node (:3040) on Sneg.
+# 0.1.2 discovery walk against the local LEZ node (:3040) on our LEZ test node.
 # Define an NFT whose metadata.uri is a sealed:v1: blob, print it to a wallet-owned
 # account, then prove `wallet sealed-records` auto-discovers + resolves it.
 set -uo pipefail

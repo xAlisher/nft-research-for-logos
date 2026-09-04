@@ -4,7 +4,7 @@ _2026-09-03. The "reveal on your terms, to whom you choose" differentiator._
 
 ## C2 — selective disclosure PROVEN (node-free)
 
-[`nft_selective_disclosure.rs`](nft_selective_disclosure.rs) — `test viewing_key_reveals_nft_holding_and_wrong_key_does_not ... ok` (integration_tests, on Sneg).
+[`nft_selective_disclosure.rs`](nft_selective_disclosure.rs) — `test viewing_key_reveals_nft_holding_and_wrong_key_does_not ... ok` (integration_tests, on our LEZ test node).
 
 Using the **real** on-chain encryption primitives (ML-KEM-768 `ViewingPublicKey`/`SharedSecretKey` + ChaCha20 `EncryptionScheme`):
 1. A private NFT holding (`TokenHolding::NftPrintedCopy { owned: true }`) is encrypted toward an owner's viewing public key, exactly as the chain stores it.
@@ -20,7 +20,7 @@ That is selective disclosure: the owner reveals one asset to one chosen verifier
 vsk_d <hex>
 vsk_z <hex>
 ```
-This is the read capability the owner hands a verifier. Verified live on Sneg against a fresh private account.
+This is the read capability the owner hands a verifier. Verified live on our LEZ test node against a fresh private account.
 
 ## C3 — DONE (verifier CLI built + demo'd live)
 

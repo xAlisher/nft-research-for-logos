@@ -6,7 +6,7 @@ _2026-09-03. The per-recipient distribution step for shield-to-recipient, proven
 ```
 test encrypt_then_shield_binds_payload_and_nft_to_recipient_viewing_key ... ok
 ```
-(integration_tests, on Sneg, `RISC0_DEV_MODE=1`.)
+(integration_tests, on our LEZ test node, `RISC0_DEV_MODE=1`.)
 
 ## What it proves
 For one recipient, given their receive-key `(npk, vpk)`, the curator:

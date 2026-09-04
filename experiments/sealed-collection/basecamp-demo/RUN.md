@@ -1,7 +1,7 @@
 # Sealed collection — live in an isolated Basecamp (5-piece wall)
 
 The `sealed_keys` module (xAlisher/sealed-keys-basecamp) shown end-to-end in an ISOLATED
-Basecamp against the Sneg LEZ node: 5 sealed NFTs across 3 exhibit halls, discovered + unsealed.
+Basecamp against the our LEZ test node LEZ node: 5 sealed NFTs across 3 exhibit halls, discovered + unsealed.
 
 ## Reliable seeding — `seed_robust.py`
 Per-step verification + retry, then passes until all present. The fragile step is the shield

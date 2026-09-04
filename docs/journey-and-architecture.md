@@ -6,7 +6,7 @@ _2026-09-03. How the collection actually gets minted, distributed, revealed — 
 
 | Component | What it is | Status |
 |---|---|---|
-| **LEZ node** | The chain the NFTs live on | ✅ live on Sneg (:3040); standalone works |
+| **LEZ node** | The chain the NFTs live on | ✅ live on our LEZ test node (:3040); standalone works |
 | **Token program** | define / print / transfer / shield / deshield NFTs | ✅ in-tree, proven live |
 | **Wallet CLI** | `wallet` binary — mint, shield, reveal (`account get`), verify-disclosure | ✅ built (our branch: A1–A4 + C) |
 | **`wallet-ffi`** | C ABI so a **module** can drive the wallet: `open`/`create_new`, `list_accounts`, `sync_to_block`, `get_account_private` (reveal), `transfer_shielded/deshielded/private_owned`, `get_private_account_keys`, `token_elf` + `send_generic_*_transaction` | ✅ exists; missing NFT convenience wrappers |

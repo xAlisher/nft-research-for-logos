@@ -1,6 +1,6 @@
 # A5 — NFT dogfooding walk against a live LEZ node (run-log)
 
-_2026-09-03. Ran the wallet against the standalone LEZ node on Sneg (`:3040`, `RISC0_DEV_MODE=1`)._
+_2026-09-03. Ran the wallet against the standalone LEZ node on our LEZ test node (`:3040`, `RISC0_DEV_MODE=1`)._
 
 > **✅ UPDATE — full walk GREEN after the A4 fix.** The transfer now lands (block 77): `nftcopy → owned:false`, `nftrecipient → owned:true`. Green run: [`run-log-green.txt`](run-log-green.txt). The first run (below) surfaced the A4 bug; kept for the record. First run: [`run-log.txt`](run-log.txt); script: [`walk.sh`](walk.sh).
 
@@ -39,4 +39,4 @@ ERROR sequencer_core] Transaction e10f42cf… failed execution check with error:
 Next: implement fix (1) or (2), re-run this walk to green, then proceed to Epic B against the live node.
 
 ## Reproduce
-Node up on Sneg (see issue #9). Then: `bash ~/nft-build/walk.sh` (uses the release wallet, `LEE_WALLET_HOME_DIR` with `sequencer_addr=http://127.0.0.1:3040`).
+Node up on our LEZ test node (see issue #9). Then: `bash ~/nft-build/walk.sh` (uses the release wallet, `LEE_WALLET_HOME_DIR` with `sequencer_addr=http://127.0.0.1:3040`).

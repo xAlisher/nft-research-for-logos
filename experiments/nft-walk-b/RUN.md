@@ -1,6 +1,6 @@
 # Epic B — private NFT ownership walk (run-log)
 
-_2026-09-03. Ran the wallet against the live standalone LEZ node on Sneg (`:3040`, `RISC0_DEV_MODE=1`). Trimmed output: [`run-log-b.txt`](run-log-b.txt) (the raw log is ~500KB — the privacy-preserving txs dump full encrypted state; trimmed here to the signal). Script: [`walk-b.sh`](walk-b.sh)._
+_2026-09-03. Ran the wallet against the live standalone LEZ node on our LEZ test node (`:3040`, `RISC0_DEV_MODE=1`). Trimmed output: [`run-log-b.txt`](run-log-b.txt) (the raw log is ~500KB — the privacy-preserving txs dump full encrypted state; trimmed here to the signal). Script: [`walk-b.sh`](walk-b.sh)._
 
 ## Result — GREEN, no code change needed
 
@@ -26,4 +26,4 @@ The **full private NFT lifecycle** works end-to-end on a live LEZ node: an NFT c
 - Selective disclosure via viewing key (Epic C: export-scoped-key + verifier) is the next differentiator layer and is **not** exercised here.
 
 ## Reproduce
-Node up on Sneg (issue #9). Then: `bash ~/nft-build/walk-b.sh` (fresh wallet home each run; `sequencer_addr=http://127.0.0.1:3040`).
+Node up on our LEZ test node (issue #9). Then: `bash ~/nft-build/walk-b.sh` (fresh wallet home each run; `sequencer_addr=http://127.0.0.1:3040`).

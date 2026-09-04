@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# A5 NFT dogfooding walk against the local LEZ node (:3040) on Sneg.
+# A5 NFT dogfooding walk against the local LEZ node (:3040) on our LEZ test node.
 set -uo pipefail
 export PATH="$HOME/.risc0/bin:$HOME/.cargo/bin:$PATH"
 export RISC0_DEV_MODE=1
