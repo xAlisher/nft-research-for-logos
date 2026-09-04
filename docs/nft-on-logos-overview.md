@@ -36,7 +36,7 @@
 - Each NFT looks like a sealed, redacted paper. Owner is hidden. You click to unseal with your private key and the real document appears.
 - Ran end to end inside an isolated Basecamp, live against a testnet node.
 
-## Private NFT ownership on Logos (the core idea, in simple words)
+## Private NFT ownership on Logos
 On other chains the public ledger says "wallet 0xABC owns NFT #5" and everyone can read it. On Logos, the ledger only stores a scrambled fingerprint of your NFT, a locked box. It does not say who owns it, or what is inside. Only you hold the key.
 
 - **Visible on-chain:** that a private transaction happened, plus scrambled fingerprints ("commitments"). Meaningless to outsiders.
