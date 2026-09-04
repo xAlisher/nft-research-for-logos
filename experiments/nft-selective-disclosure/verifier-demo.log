@@ -10,8 +10,8 @@ Holding account owned by token program
 {"NftPrintedCopy":{"definition_id":"6zt5YG1gbZqCp1wNEmzJKqDAs8qtgYzkX5Q5fdZnFECH","owned":true}}
 == owner exports viewing key (the read capability) ==
 npk=7af5be6f784c5a7d4d6282703912cda9ebbdc2825cc2da136a3948b508e13ada
-vsk_d=bfe58e59a4b045612e11f915d5ac96d7cec5f6b08e1b9010ca55ee6861bfccdd
-vsk_z=d5481d5e5587b506021099c6cf55730af0c09baeec83342bd797bd9bf0a6ed56
+vsk_d=<redacted — dev-mode throwaway viewing secret>
+vsk_z=<redacted — dev-mode throwaway viewing secret>
 
 ===== VERIFIER with the CORRECT viewing key (should disclose the NFT) =====
 block 214 output 0: disclosed holding NftPrintedCopy { definition_id: 6zt5YG1gbZqCp1wNEmzJKqDAs8qtgYzkX5Q5fdZnFECH, owned: true }

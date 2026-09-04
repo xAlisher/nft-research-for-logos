@@ -1,6 +1,10 @@
 # Logos NFT Research
 
-Deep research into NFTs on Logos: comparative analysis (Ethereum, Solana, Bitcoin Ordinals), a coherent strategy, Logos differentiators, and a buildable MVP. Private — exploratory EcoDev research.
+> **Disclaimer.** This is an independent community project intended to demonstrate some of the capabilities and potential uses of the Logos technology stack. It has been developed independently by its contributor(s) and is not built for, on behalf of, or as part of the work of Logos or the Institute of Free Technology. It has not been reviewed, audited, approved, or endorsed by Logos or the Institute of Free Technology. The project, including its code, documentation, views, and functionality, is the sole responsibility of its contributor(s) and should not be attributed to Logos or the Institute of Free Technology.
+>
+> Exploratory R&D only — test / dev-mode, throwaway keys, a local testnet node. Do not use in production. Analysis of upstream code refers to the public [logos-blockchain/logos-execution-zone](https://github.com/logos-blockchain/logos-execution-zone).
+
+Deep research into NFTs on Logos: comparative analysis (Ethereum, Solana, Bitcoin Ordinals), Logos' differentiator (**private-by-default ownership**), a buildable MVP, and hands-on dogfooding findings from actually running the stack. Companion PoC app: [xAlisher/sealed-keys-basecamp](https://github.com/xAlisher/sealed-keys-basecamp).
 
 ## The finding, in one line
 Every incumbent (ETH/SOL/BTC) is public-by-construction on **who owns a token**. Logos already ships shielded, zk-proven accounts + a first-class `NonFungible` token program in-tree → the differentiator is **the first NFT you can own privately, transfer unlinkably, and reveal on your terms.**
