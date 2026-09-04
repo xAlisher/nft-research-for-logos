@@ -6,6 +6,8 @@
 
 Deep research into NFTs on Logos: comparative analysis (Ethereum, Solana, Bitcoin Ordinals), Logos' differentiator (**private-by-default ownership**), a buildable MVP, and hands-on dogfooding findings from actually running the stack. Companion PoC app: [xAlisher/sealed-keys-basecamp](https://github.com/xAlisher/sealed-keys-basecamp).
 
+**Start here: [NFT on Logos — overview & dogfooding findings](docs/nft-on-logos-overview.md)** (plain-language summary for readers/agents).
+
 ## The finding, in one line
 Every incumbent (ETH/SOL/BTC) is public-by-construction on **who owns a token**. Logos already ships shielded, zk-proven accounts + a first-class `NonFungible` token program in-tree → the differentiator is **the first NFT you can own privately, transfer unlinkably, and reveal on your terms.**
 
